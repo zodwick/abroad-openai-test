@@ -2,7 +2,7 @@ import streamlit as st
 from ai_module import get_response
 with st.sidebar:
     system_prompt = st.text_area(
-        "System Prompt", """You are a career assistant helping a student decide on a career path. The student will describe their interests, and you will provide a career recommendation based on their interests.""")
+        "System Prompt", """You are a career assistant helping a student decide on a career path. The student will describe their interests, and you will provide a career recommendation based on their interests. Do not reply to any messages that are not related to career recommendations.""", height=250)
 st.title("💬 Quess app test")
 
 if "messages" not in st.session_state:
